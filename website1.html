@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website 1</title>
+    <link rel="stylesheet" href="website1.css" />
+</head>
+
+<body>
+    <form>
+        <div class="feedbackcontainer">
+            <h1 id="Student Feedback">Student Feedback</h1>
+            <h4>Please rate your experience with the faculty</h4>
+        </div>
+        <div class="studentName">
+            <legend>Student Name</legend>
+        </div>
+        <div class="name">
+            <input type="text" id="firstName" class="firstName" placeholder="👤Enter your First Name" />
+            <input type="text" id="secondName" class="secondName" placeholder="👤Enter your Second Name" />
+        </div>
+
+        <div class="studentID">
+            <legend>Student ID</legend>
+        </div>
+        <div class="id">
+            <input type="text" id="studentid" class="studentID" placeholder="Enter your Student ID">
+        </div>
+
+        <div class="grade">
+            <legend>Grade</legend>
+        </div>
+        <div class="gde">
+            <select id="grade" class="grde" name="grade" required>
+                <option value="Empty">Empty</option>
+                <option value="5.0">First Class</option>
+                <option value="4.5 -4.0">Second Class Upper</option>
+                <option value="3.5-4.0">Second Class Lower</option>
+                <option value="2.5-3.5">Third Class</option>
+            </select>
+        </div>
+
+        <div>
+            <legend>Rate your overall experience at school</legend>
+        </div>
+
+
+        <!--<div class="rating">
+    <input type="radio" name="rate" id="rate5" value="5">
+    <label for="rate5" class="star">&#9733;</label>
+
+    <input type="radio" name="rate" id="rate4" value="4">
+    <label for="rate4" class="star">&#9733;</label>
+
+    <input type="radio" name="rate" id="rate3" value="3">
+    <label for="rate3" class="star">&#9733;</label>
+
+    <input type="radio" name="rate" id="rate2" value="2">
+    <label for="rate2" class="star">&#9733;</label>
+
+    <input type="radio" name="rate" id="rate1" value="1">
+    <label for="rate1" class="star">&#9733;</label>
+</div>
+-->
+        <div class="rating">
+            <input type="radio" name="rate" id="rate5" value="5">
+            <label class="star" for="rate5">&#9733;</label>
+
+            <input type="radio" name="rate" id="rate4" value="4" >
+            <label class="star"  for="rate4">&#9733;</label>
+
+            <input type="radio" name="rate" id="rate3" value="3">
+            <label class="star" for="rate3">&#9733;</label>
+
+            <input type="radio" name="rate" id="rate2" value="2">
+            <label class="star" for="rate2">&#9733;</label>
+
+            <input type="radio" name="rate" id="rate1" value="1">
+            <label class="star" for="rate1">&#9733;</label>
+        </div>
+
+        <div class="feedback">
+            <legend>Do you have any suggestions?</legend>
+        </div>
+        <div class="suggestions">
+        <textarea name="suggestions" id="suggestions"placeholder="enter your suggestions here" rows="10" cols="230"></textarea>
+        </div>
+    </form>
+</body>
+
+</html>

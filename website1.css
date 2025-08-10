@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* centers content vertically */
+    min-height: 100vh; /* makes body at least full screen height */
+    background-image: url("https://res.cloudinary.com/dardts89y/image/upload/v1754764139/photo_2025-08-09_19-28-27_apdtwj.jpg");
+    background-size: cover; /* makes image fill the background */
+    background-position: center; /* centers the image */
+}
+
+form{
+    
+    color: white;
+    padding:40px;
+    font-size: small;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width:600px;
+    width:900px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:50px;
+    color:whitesmoke;
+}
+
+.feedbackcontainer{
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+.feedbackcontainer h1{
+    margin-bottom:20px;
+}
+
+.feedbackcontainer h4{
+    margin-bottom:50px;
+}
+
+.studentName {
+    font-size: larger;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.name{
+    max-width:3000px;
+    width:90%;
+    color:black;
+    display:flex;
+    gap:50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.name input{
+    flex:1;
+    padding:10px;
+    border-radius:0px;
+    border:1px solid #555;
+    background-color:transparent;
+}
+
+.studentID {
+   font-size:larger;
+   margin-top:30px;
+   margin-bottom:10px;
+}
+
+.id{
+    max-width: 3000px;
+        width: 90%;
+        color: black;
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+
+.id input{
+    flex:1;
+    padding:10px;
+    border-radius:0px;
+    border-bottom: 1px solid white;
+    border:1px solid #555;
+    background-color:transparent;
+    color:white;
+}
+
+.grade{
+    font-size: larger;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.grde{
+    font-size: larger;
+    max-width: 3000px;
+    width: 90%;
+    color: black;
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.grde select{
+    flex:1;
+    padding:10px;
+    border-radius:0px;
+    border:1px solid #555;
+    background-color:transparent;
+    color:white;
+}
+
+.rating{
+    font-size:larger;
+    margin-bottom:30px;
+    margin-top: 30px;
+    cursor:pointer;
+    display:flex;
+}
+
+.rating input{
+    display:none;
+}
+
+.rating input:checked ~ .star{
+    color:gold;
+}
+.star{
+    font-size: 90px;
+    color:transparent;
+    -webkit-text-stroke:1px white;
+    transition:0.2s;
+    flex-direction:row-reverse;
+    justify-content: center;
+}
+
+.star.active{
+    color:gold;
+
+}
+
+.star:hover{
+    color:gold;
+}
+.feedback{
+    font-size:larger;
+    margin-top:50px;
+    margin-bottom:1px;
+}
+.suggestions{
+    font-size: larger;
+    max-width: 3000px;
+    width: 90%;
+    color:black;
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.suggestions textarea{
+    flex:1;
+    padding:10px;
+    border-radius:0px;
+    border:1px solid #555;
+    background-color:transparent;
+    color:white;
+}
+
+/* White underline style for all form fields */
+.name input,
+.id input,
+.grde select{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    /* remove all borders */
+    border-bottom: 1px solid white;
+    /* underline only */
+    background-color: transparent;
+    color: white;
+}
