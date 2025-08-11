@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Banker Replica</title>
+  <link rel="stylesheet" href="replicaweb.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <div class="welcome">Welcome back, Irfan</div>
+      <div class="logo">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21C12 21 7 16 4 12 7 8 12 3 12 3s5 5 8 9c-3 4-8 9-8 9z"/>
+        </svg>
+        <span class="logo-text">Modern Banker</span>
+      </div>
+      <form class="login-form" action="#" method="post" autocomplete="off">
+        <input type="text" name="username" placeholder="Username" maxlength="2" />
+        <input type="password" name="pin" placeholder="••••" maxlength="4" />
+        <button type="submit">LOGIN</button>
+      </form>
+    </header>
+
+    <main class="main-content">
+      <section class="balance-section">
+        <h2>Current balance</h2>
+        <div class="balance-amount">3840$</div>
+      </section>
+
+      <section class="content-section">
+        <div class="transactions">
+          <ul>
+            <li class="transaction deposit">
+              <span class="type-label">deposit</span>
+              <span class="amount">1380$</span>
+            </li>
+            <li class="transaction deposit">
+              <span class="type-label">deposit</span>
+              <span class="amount">90$</span>
+            </li>
+            <li class="transaction withdrawal">
+              <span class="type-label">withdrawal</span>
+              <span class="amount">-30$</span>
+            </li>
+            <li class="transaction withdrawal">
+              <span class="type-label">withdrawal</span>
+              <span class="amount">-750$</span>
+            </li>
+            <li class="transaction deposit">
+              <span class="type-label">deposit</span>
+              <span class="amount">3000$</span>
+            </li>
+            <li class="transaction withdrawal">
+              <span class="type-label">withdrawal</span>
+              <span class="amount">-600$</span>
+            </li>
+            <li class="transaction deposit">
+              <span class="type-label">deposit</span>
+              <span class="amount">250$</span>
+            </li>
+            <li class="transaction deposit">
+              <span class="type-label">deposit</span>
+              <span class="amount">500$</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="actions">
+          <form class="action transfer-money" action="#" method="post" autocomplete="off">
+            <h3>Transfer money</h3>
+            <input type="text" name="transferTo" placeholder="Transfer to" />
+            <input type="number" name="amount" placeholder="Amount" />
+            <button type="submit" aria-label="Transfer money">→</button>
+          </form>
+
+          <form class="action request-loan" action="#" method="post" autocomplete="off">
+            <h3>Request loan</h3>
+            <input type="number" name="loanAmount" placeholder="Amount" />
+            <button type="submit" aria-label="Request loan">→</button>
+          </form>
+
+          <form class="action close-account" action="#" method="post" autocomplete="off">
+            <h3>Close account</h3>
+            <input type="text" name="confirmUser" placeholder="Confirm user" />
+            <input type="password" name="confirmPin" placeholder="Confirm PIN" />
+            <button type="submit" aria-label="Close account">→</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
